@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/*  width and heigth of parent div will effect child width so for that width and heigth of child should be accourding to parent div */
+.parent {
+  display: flex;
+  /* justify-content: space-around; */
+  background-color: aqua;
+  /* height: 80vh; */
+  align-items: center;
+}
+
+.chind {
+  text-align: center;
+  width: 30%;
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 15px;
+  /* height: 35vh; */
+}
+
+.one {
+  /* width: 20%; */
+}
+
+@media screen and ( max-width: 992px) {
+  .parent{
+    flex-direction: column;
+  /* height: 120vh; */
+    justify-content: space-around;
+   
+  }
+  .chind{
+    margin: 5px;
+
+  }
+}
